@@ -34,7 +34,7 @@ body{
     background: #fff;
 }
 .submit-form{
-    background: red;
+    background: #8f50ec;
 }
 .first-text{
     color: #fff;
@@ -81,4 +81,46 @@ body{
     left: 20px;
     padding-top: 10px;
     color: #fff;
+}
+form{
+    padding: 0 50px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.input-box{
+    height: 40px;
+    width: 70%;
+    margin: 30px 0;
+    position: relative;
+}
+.input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    outline: none;
+    padding-left: 10px;
+    color: #fff;
+    font-size: 16px;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    padding-left: 10px;
+    transform: translateY(-50%);
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+}
+.input-box .input:focus ~ label,
+.input-box .input:valid ~ label{
+    top: -1px;
+    left: 10px;
+    background: #8f50ec;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 5px;
 }
